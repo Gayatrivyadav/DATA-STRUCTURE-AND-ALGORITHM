@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class MyClass{
+static boolean isPalindrome(String str){
+//i is a beginning of the string
+int i = 0; 
+//j is nothing but the end of the string
+int j = str.length() - 1;
+while(i<j){
+if(str.charAt(i)!=str.charAt(j))
+return false;
+//i++ means we are going to check in forward direction
+i++;
+//j--means we are going to check in reverse direction
+j--;
+}
+return true;
+}
+public static void main(String[] args){
+String str = "LEVEL";
+str = str.toLowerCase();
+if(isPalindrome(str))
+System.out.println("Yes");
+else
+System.out.println("No");
+}
+}
+
+//output :Yes
