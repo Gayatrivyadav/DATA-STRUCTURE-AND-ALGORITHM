@@ -1,0 +1,47 @@
+//output:
+
+Time(sec) : 0.177Memory(MB) : 33.23828125
+Output:
+Set of Keys and Values using entrySet() : [Garima=36, pooja=35, hii=44, Gayatri=34]
+Initial mapping are: {Garima=36, pooja=35, hii=44, Gayatri=34}
+{Garima=36, pooja=78, hii=44, Gayatri=34}
+Initial values[Garima, pooja, hii, Gayatri]
+Initial values[36, 78, 44, 34]
+The value is: 44
+
+/*code*/
+import java.util.*;
+
+public class MyClass{
+    
+    public static void main(String[] args){
+        HashMap<String, Integer> mp = new HashMap<String, Integer>();
+        mp.put("Gayatri", 34);
+        mp.put("pooja", 35);
+        mp.put("Garima", 36);
+        mp.put("hii", 44);
+        //entrySet() method returns all the keys with their Values present in the hashmap
+        
+                Set<Map.Entry<String, Integer>> mappings = mp.entrySet();
+        System.out.println("Set of Keys and Values using entrySet() : "+mappings);
+        
+        
+        
+        System.out.println("Initial mapping are: "+mp);
+        if(mp.containsKey("fd")){
+            System.out.println(mp.get("pooja"));
+        }else{
+            mp.put("pooja", 78);
+            System.out.println(mp);
+        }
+        //keySet() method returns all the keys the map
+        Set<String> K = mp.keySet();
+        System.out.println("Initial values" + K);
+        
+        //values method returns all values in HashMap
+        Collection<Integer> V = mp.values();
+        System.out.println("Initial values" + V );
+        //getting the value of hii
+        System.out.println("The value is: "+mp.get("hii"));
+    }
+}
