@@ -1,0 +1,22 @@
+output: {A=1, B=2, C=3}
+
+import java.util.*;
+public class MyClass {
+    public static <K , V> Map<K, V> copyMap(Map<K, V> original){
+        Map<K, V> second_map = new HashMap<>();
+        //start the iteration and copy the key and value for each map to the other map
+        for(Map.Entry<K, V> entry: original.entrySet()){
+            second_map.put(entry.getKey(), entry.getValue());
+        }
+        return second_map;
+    }
+    public static void main(String args[]) {
+   
+Map<String, Integer> mp = new HashMap<>();
+         mp.put("A", 1);
+         mp.put("B", 2);
+         mp.put("C", 3);
+         Map<String, Integer>second_map = copyMap(mp);
+      System.out.println(second_map);
+    }
+}
