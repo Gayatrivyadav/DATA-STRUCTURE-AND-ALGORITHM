@@ -2,12 +2,15 @@
 
 Time(sec) : 0.177Memory(MB) : 33.23828125
 Output:
+//hashmap mp is not empty and the keys and values pairs are: {Garima=36, pooja=35, hii=44, Gayatri=34}
 Set of Keys and Values using entrySet() : [Garima=36, pooja=35, hii=44, Gayatri=34]
 Initial mapping are: {Garima=36, pooja=35, hii=44, Gayatri=34}
 {Garima=36, pooja=78, hii=44, Gayatri=34}
 Initial values[Garima, pooja, hii, Gayatri]
 Initial values[36, 78, 44, 34]
 The value is: 44
+size of hahsmap: 4
+
 
 /*code*/
 import java.util.*;
