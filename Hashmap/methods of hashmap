@@ -20,8 +20,12 @@ public class MyClass{
         mp.put("pooja", 35);
         mp.put("Garima", 36);
         mp.put("hii", 44);
-        //entrySet() method returns all the keys with their Values present in the hashmap
+        //isEmpty method checks the map is empty or not
+        if(!mp.isEmpty()){
+        System.out.println("hashmap mp is not empty and the keys and values pairs are:  "+ mp);
+        }
         
+        //entrySet() method returns all the keys with their Values present in the hashmap
                 Set<Map.Entry<String, Integer>> mappings = mp.entrySet();
         System.out.println("Set of Keys and Values using entrySet() : "+mappings);
         
@@ -42,6 +46,9 @@ public class MyClass{
         Collection<Integer> V = mp.values();
         System.out.println("Initial values" + V );
         //getting the value of hii
-        System.out.println("The value is: "+mp.get("hii"));
+        System.out.println("The value is : " + mp.get("hii"));
+        
+        //size method prints the size of the hashmap
+        System.out.println("size of hahsmap: " + mp.size());
     }
 }
