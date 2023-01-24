@@ -28,6 +28,7 @@ import java.util.*;
                     int s2 = value(str.charAt(i+1));
                     
                     if(s1>=s2){
+                    
                         
                         res = res + s1;
                     }
