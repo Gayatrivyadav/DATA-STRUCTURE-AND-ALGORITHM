@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.*;
  import java.lang.*;
 class LinkedList {
+
     Node head;
 static class Node{
   
